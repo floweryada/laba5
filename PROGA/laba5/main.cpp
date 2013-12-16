@@ -22,7 +22,7 @@ int main()
     int N = 1;
     for ( int i = 0; i < len; ++i)
     {
-        if( str[i] == ' ') N += 1;
+        if(( str[i] == ' ' ) && ( str[i+1] != ' ' ) ) N += 1;
     }
 
     cout << "Number of words: " << N << endl;
